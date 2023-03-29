@@ -20,8 +20,8 @@ For my test, I connected a 2.4 GHz reference clock.
 ##### External Control through SPI #####
 - Set pins **P203**, **P204**, and **P205** to disable for external control.
 - Connect the external power down pin (**EXTPDCTL-BUF**) to **GND** to disable the power-down mode. A power-down of the digital core disbales the ability to update the serial/parallel input/output port.
-- Set serial programming mode by connecting pin F0 (**IOCFG0** on the evaluation board) to logic HIGH and pins F1-F3 (**IOCFG1-IOCFG3** on the evaluation board) to logic LOW.
-- Connect pins PS0-BUF, PS1-BUF, PS2-BUF to GND.
+- Set the serial programming mode by connecting pin F0 (**IOCFG0** on the evaluation board) to logic HIGH and pins F1-F3 (**IOCFG1-IOCFG3** on the evaluation board) to logic LOW.
+- Configure profile pins **PS0-BUF, PS1-BUF, PS2-BUF** to select which profile to use if using the profile mode.
 ### Wiring the evaluation board and controller
 
 
