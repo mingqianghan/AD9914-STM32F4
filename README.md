@@ -24,7 +24,7 @@ For my test, I connected a 2.4 GHz reference clock.
 - Configure the profile pins **PS0-BUF, PS1-BUF, and PS2-BUF** to select the desired profile when using profile mode. For example, connecting all of these pins to logic LOW will choose profile 0, while connecting all of them to logic HIGH will choose profile 7.
 ### Wiring connections between AD9914 and STM32
 The following table shows the connections between AD9914 and STM32 in my test. You can rearrange STM32 pins connected to the Ad9914 evaluation board.
-|  **AD9914 Pins** |             **STM32 Pins**            |                                                        **Function**                                                        |
+|  **AD9914 Pins** |             **STM32 Pins**            |                                                        **Functions**                                                        |
 |:----------------:|:-------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------:|
 |  MPI00 (SPI_CS)  | GND (or use a digital pin to control) |                                           Chip selection: it is active when LOW                                            |
 |  MPI01 (SPI_CLK) |             PA5 (SPI1 CLK)            |        Serial clock synchronization (showld not be higher than 10 MBits/s if using jumping wires to SPI connection)        |
