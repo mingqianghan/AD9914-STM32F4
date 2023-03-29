@@ -3,7 +3,12 @@ This repository provides a guide to the construction and implementation of contr
 ## Setups and Wiring
 ### AD9914 Evaluation Board
 #### Power Supplies ####
-
+3.3V and 1.8V are required to power this board. The power supply connector **P300** on the evaluation board has 4 pins. The connections and appropriate supply voltages are as follows.
+| **Label** | **Voltage (V)** |
+|-----------|-----------------|
+| GND       | 0               |
+| 3.3V      | 3.3             |
+| 1.8V      | 1.8             |
 ##### External Reference Clock #####
 
 ##### External Control through SPI #####
