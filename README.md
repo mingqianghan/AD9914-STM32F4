@@ -5,7 +5,7 @@ This repository provides a guide to the construction and implementation of contr
 The following set-ups should be completed for the external control of the evaluation board:
 - Set pins **P203**, **P204**, and **P205** to disable for external control.
 - Connect the external power down pin (**EXTPDCTL-BUF**) to **GND** to disable the power-down mode. A power-down of the digital core disbales the ability to update the serial/parallel input/output port.
-- Set the Function Pins F3-F0 (**IOCFG3-IOCFG0** on the evaluation board) to 0001 for serial communication. 
+- Set the Function Pins F3-F0 (**IOCFG3-IOCFG0**) on the evaluation board to 0001 for serial communication. 
 - Connect pins PS0-BUF, PS1-BUF, PS2-BUF to GND.
 ### Wiring the evaluation board and controller
 
