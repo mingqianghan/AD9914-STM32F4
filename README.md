@@ -9,6 +9,7 @@ This repository provides a guide to the construction and implementation of contr
 |    GND    |        0        |
 |    3.3V   |       3.3       |
 |    1.8V   |       1.8       |
+
 This board requires a high current draw. For my test, I used linear voltage regulators to convert 5V to 3.3V and 1.8V, resulting in a total current of approximately 1A when generating a signal.
 ##### External Reference Clock #####
 
