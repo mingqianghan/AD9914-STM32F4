@@ -18,12 +18,12 @@ There are two options to provide the input reference clock signal to the SMA con
 
 For my test, I connected a 2.4 GHz reference clock.
 ##### External Control through SPI #####
-- Set pins **P203**, **P204**, and **P205** to disable for external control.
+- Set pins **P203**, **P204**, and **P205** to disable.
 - Connect the external power down pin (**EXTPDCTL-BUF**) to **GND** to disable the power-down mode. A power-down of the digital core disbales the ability to update the serial/parallel input/output port.
 - Set the serial programming mode by connecting pin F0 (**IOCFG0** on the evaluation board) to logic HIGH and pins F1-F3 (**IOCFG1-IOCFG3** on the evaluation board) to logic LOW.
 - Configure the profile pins **PS0-BUF, PS1-BUF, and PS2-BUF** to select the desired profile when using profile mode. For example, connecting all of these pins to logic LOW will choose profile 0, while connecting all of them to logic HIGH will choose profile 7.
-### Wiring the evaluation board and controller
-
+### Wiring connections between AD9914 and STM32
+- RESET 
 
 ## Reference
 - [AD9914 Data Sheet](https://www.analog.com/media/en/technical-documentation/data-sheets/ad9914.pdf)
