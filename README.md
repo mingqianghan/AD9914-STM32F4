@@ -5,10 +5,11 @@ This repository provides a guide to the construction and implementation of contr
 #### Power Supplies ####
 3.3V and 1.8V are required to power this board. The power supply connector **P300** on the evaluation board has 4 pins. The connections and appropriate supply voltages are as follows.
 | **Label** | **Voltage (V)** |
-|-----------|-----------------|
-| GND       | 0               |
-| 3.3V      | 3.3             |
-| 1.8V      | 1.8             |
+|:---------:|:---------------:|
+|    GND    |        0        |
+|    3.3V   |       3.3       |
+|    1.8V   |       1.8       |
+This board requires a high current draw. For my test, I used linear voltage regulators to convert 5V to 3.3V and 1.8V, resulting in a total current of approximately 1A when generating a signal.
 ##### External Reference Clock #####
 
 ##### External Control through SPI #####
