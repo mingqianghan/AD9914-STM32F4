@@ -23,7 +23,7 @@ For my test, I connected a 2.4 GHz reference clock.
 - Set the serial programming mode by connecting pin F0 (**IOCFG0** on the evaluation board) to logic HIGH and pins F1-F3 (**IOCFG1-IOCFG3** on the evaluation board) to logic LOW.
 - Configure the profile pins **PS0-BUF, PS1-BUF, and PS2-BUF** to select the desired profile when using profile mode. For example, connecting all of these pins to logic LOW will choose profile 0, while connecting all of them to logic HIGH will choose profile 7.
 ### Wiring connections between AD9914 and STM32
-The following table shows the connections between AD9914 and STM32 in my test. You can rearrange STM32 pins connected to the Ad9914 evaluation board.
+The following table displays the connections between the AD9914 and the STM32 in my test. You have the flexibility to rearrange the STM32 pins that are connected to the AD9914 evaluation board.
      | **AD9914 Pins**     | **STM32 Pins**                          | **Functions**                                                                                                              |
 |---------------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | MPI00 (SPI_CS)      | GND (or use a digital pin to control)   | Chip selection: it is active when LOW                                                                                      |
