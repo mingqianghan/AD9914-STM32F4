@@ -5,4 +5,6 @@ The following set-ups should be completed for the external control of the evalua
 - Connect the external power down pin (EXTPDCTL-BUF) to GND.
 - Set pins P203, P204, and P205 to disable.
 - Connect pins PS0-BUF, PS1-BUF, PS2-BUF to GND.
+## wiring the evaluation board and controller
+
 
