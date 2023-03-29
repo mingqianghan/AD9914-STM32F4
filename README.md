@@ -15,6 +15,7 @@ This board requires a high current draw. For my test, I used linear voltage regu
 There are two options to provide the input reference clock signal to the SMA connector **J104** (**SINGLE ENDED CLK IN**):
 - connect a high frequency clock signal up to 3.5 GHz.
 - connect a lower frequency clock signal and enable the internal clock multiplier (PLL).
+
 For my test, I connected a 2.4 GHz reference clock.
 ##### External Control through SPI #####
 - Set pins **P203**, **P204**, and **P205** to disable for external control.
