@@ -32,5 +32,8 @@ The following table displays the connections between the AD9914 and the STM32 in
 | RESET-BUF           | PB1 (or choose availabe digital pins)   | Master reset: this is required after power up                                                                              |
 | IOUPDATE-BUF        | PB0 (or choose availabe digital pins)   | This initiates the transfer of written data from port buffer to active registers. IO_UPDATE is active on the rising edge.  |
 | GND                 | GND                                     | Ground                                                                                                                     |                                            |
+
+An example of wiring connections is shown in the following figure.
+![AD9914_STM32 connections](https://user-images.githubusercontent.com/49960231/228725574-eddefc6c-abb5-49b0-ab80-50401e504499.png)
 ## Reference
 - [AD9914 Data Sheet](https://www.analog.com/media/en/technical-documentation/data-sheets/ad9914.pdf)
