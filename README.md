@@ -48,8 +48,14 @@ The `main.c`inludes an example of generateing single-tone singles. During initia
 
 After initialization, three different sine waves with intervals of 10 seconds were generated using the `Generate_single_tone_signal()` function for test purposes.
 
+
 **200 MHz**
 ![200](https://user-images.githubusercontent.com/49960231/229195401-7564632a-3fb6-43e4-8aa2-fd7351394c64.png)
+
+
+**85 MHz**
+![200](https://user-images.githubusercontent.com/49960231/229195401-7564632a-3fb6-43e4-8aa2-fd7351394c64.png)
+
 
 ## Reference
 - [AD9914 Data Sheet](https://www.analog.com/media/en/technical-documentation/data-sheets/ad9914.pdf)
