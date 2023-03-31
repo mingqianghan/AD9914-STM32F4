@@ -40,8 +40,8 @@ The following table and figure displays the connections between the AD9914 and t
 - Configure the clock for the micontroller, set up I/O pins, etc.
 - Configure the SPI interface by selecting the "Half-Duplex Master" mode, in which the microcontroller only writes commands and data to the AD9914.
 ### Usage
-
-
+The functions that control the AD9914 evaluation board are defined in the files located in the AD9914 folder under AD9914_Test. Download the AD9914 folder and inlcude this in your project. 
+The `main.c`
 
 
 ## Reference
