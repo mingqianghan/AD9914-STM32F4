@@ -54,7 +54,7 @@ After initialization, three different sine waves with intervals of 10 seconds we
 
 
 **85 MHz**
-![200](https://user-images.githubusercontent.com/49960231/229195401-7564632a-3fb6-43e4-8aa2-fd7351394c64.png)
+![85](https://user-images.githubusercontent.com/49960231/229196093-db6d3aa0-1c13-49e4-b400-b619354ff09d.png)
 
 
 ## Reference
