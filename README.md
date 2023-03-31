@@ -26,7 +26,7 @@ In my test, I connected it to a 2.4 GHz reference clock.
 The following table and figure displays the connections between the AD9914 and the STM32 in my test.
      | **AD9914 Pins**     | **STM32 Pins**                          | **Functions**                                                                                                              |
 |---------------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| MPI00 (SPI_CS)      | GND (or use a digital pin to control)   | Chip selection: it is active when LOW                                                                                      |
+| MPI00 (SPI_CS)      | GND (or use a digital pin to control)   | Chip selection - active when LOW                                                                                      |
 | MPI01 (SPI_CLK)     | PA5 (SPI1 CLK)                          | Serial clock synchronization               |
 | MPI02 (SPI_SDIO)    | PA7 (SPI1 MOSI)                         | Serial Data Input/Output                                                                                                   |
 | RESET-BUF           | PB1 (or choose availabe digital pins)   | Master reset                                                                            |
