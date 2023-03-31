@@ -57,5 +57,8 @@ After initialization, three different sine waves with intervals of 10 seconds we
 ![85](https://user-images.githubusercontent.com/49960231/229196093-db6d3aa0-1c13-49e4-b400-b619354ff09d.png)
 
 
+**56 MHz**
+![56](https://user-images.githubusercontent.com/49960231/229196262-bfd282b8-8ab7-4907-acc8-82bca8aae4f2.png)
+
 ## Reference
 - [AD9914 Data Sheet](https://www.analog.com/media/en/technical-documentation/data-sheets/ad9914.pdf)
