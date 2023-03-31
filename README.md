@@ -29,7 +29,7 @@ The following table and figure displays the connections between the AD9914 and t
 | MPI00 (SPI_CS)      | GND (or use a digital pin to control)   | Chip selection: it is active when LOW                                                                                      |
 | MPI01 (SPI_CLK)     | PA5 (SPI1 CLK)                          | Serial clock synchronization               |
 | MPI02 (SPI_SDIO)    | PA7 (SPI1 MOSI)                         | Serial Data Input/Output                                                                                                   |
-| RESET-BUF           | PB1 (or choose availabe digital pins)   | Master reset: this is required after power up                                                                              |
+| RESET-BUF           | PB1 (or choose availabe digital pins)   | Master reset                                                                            |
 | IOUPDATE-BUF        | PB0 (or choose availabe digital pins)   | This initiates the transfer of written data from the port buffer to active registers. IO_UPDATE is active on a rising edge.  |
 | GND                 | GND                                     | Ground                                                                                                                     |                                            |
 
@@ -40,9 +40,13 @@ The following table and figure displays the connections between the AD9914 and t
 - Configure the clock for the micontroller, set up I/O pins, etc.
 - Configure the SPI interface by selecting the "Half-Duplex Master" mode, in which the microcontroller only writes commands and data to the AD9914.
 ### Usage
-The functions that control the AD9914 evaluation board are defined in the files located in the AD9914 folder under AD9914_Test. Download the AD9914 folder and inlcude this in your project. 
-The `main.c`
+The functions that control the AD9914 evaluation board are defined in the files located in the AD9914 folder under AD9914_test. To include these functions in your project, download the AD9914 folder. 
+The `main.c`inludes an example of generateing single-tone singles. During initialization, the following steps should be performed:
+1. Call `Send_Reset()` to reset the AD9914, which is required after power up.
+2. Call `Initilize_DDS()` to initialize the control function registers CFR1-CFR4.
+3. Call `Calibrate_DAC()` to calibrate the DAC. This must be done after each power-up and every time REF_CLK or the internal system clock is changed.  Failure to calibrate degrades AC performance or makes the device nonfunctional.
 
+After initialization, three different sine waves with intervals of 10 seconds were generated using the `Generate_single_tone_signal()` function for test purposes.
 
 ## Reference
 - [AD9914 Data Sheet](https://www.analog.com/media/en/technical-documentation/data-sheets/ad9914.pdf)
