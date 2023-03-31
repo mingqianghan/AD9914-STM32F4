@@ -1,6 +1,6 @@
 # AD9914-STM32F4
 This repository provides a guide to the construction and implementation of controlling the AD9914 DDS (Direct Digital Synthesizer) Evaluation Board using the STM32F4 microcontroller through SPI. 
-## Setups and Wiring
+## Hardware Setup
 ### AD9914 Evaluation Board
 #### Power Supplies ####
 3.3V and 1.8V are required to power this board. The power supply connector **P300** on the evaluation board has 4 pins. The connections and appropriate supply voltages are as follows.
@@ -16,7 +16,7 @@ There are two options to provide the input reference clock signal to the SMA con
 - connect a high frequency clock signal up to 3.5 GHz.
 - connect a lower frequency clock signal and enable the internal clock multiplier (PLL).
 
-In my test, I connected a 2.4 GHz reference clock.
+In my test, I connected it to a 2.4 GHz reference clock.
 ##### External Control through SPI #####
 - Set pins **P203**, **P204**, and **P205** to disable.
 - Connect the external power down pin (**EXTPDCTL-BUF**) to **GND** to disable the power-down mode. A power-down of the digital core disbales the ability to update the serial/parallel input/output port.
@@ -27,12 +27,22 @@ The following table and figure displays the connections between the AD9914 and t
      | **AD9914 Pins**     | **STM32 Pins**                          | **Functions**                                                                                                              |
 |---------------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | MPI00 (SPI_CS)      | GND (or use a digital pin to control)   | Chip selection: it is active when LOW                                                                                      |
-| MPI01 (SPI_CLK)     | PA5 (SPI1 CLK)                          | Serial clock synchronization (showld not be higher than 10 MBits/s if using jumping wires for SPI connection)               |
+| MPI01 (SPI_CLK)     | PA5 (SPI1 CLK)                          | Serial clock synchronization               |
 | MPI02 (SPI_SDIO)    | PA7 (SPI1 MOSI)                         | Serial Data Input/Output                                                                                                   |
 | RESET-BUF           | PB1 (or choose availabe digital pins)   | Master reset: this is required after power up                                                                              |
 | IOUPDATE-BUF        | PB0 (or choose availabe digital pins)   | This initiates the transfer of written data from the port buffer to active registers. IO_UPDATE is active on a rising edge.  |
 | GND                 | GND                                     | Ground                                                                                                                     |                                            |
 
 ![AD9914_STM32 connections](https://user-images.githubusercontent.com/49960231/228725574-eddefc6c-abb5-49b0-ab80-50401e504499.png)
+
+## Software 
+### Configuration of STM32 using STM32CubeIDE
+- Configure the clock for the micontroller, set up I/O pins, etc.
+- Configure the SPI interface by selecting the "Half-Duplex Master" mode, in which the microcontroller only writes commands and data to the AD9914.
+### Usage
+
+
+
+
 ## Reference
 - [AD9914 Data Sheet](https://www.analog.com/media/en/technical-documentation/data-sheets/ad9914.pdf)
