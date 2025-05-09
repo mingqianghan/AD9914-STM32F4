@@ -29,8 +29,8 @@ The following table and figure displays the connections between the AD9914 and t
 | MPI00 (SPI_CS)      | GND (or use a digital pin to control)   | Chip selection - active when LOW                                                                                      |
 | MPI01 (SPI_CLK)     | PA5 (SPI1 CLK)                          | Serial clock synchronization               |
 | MPI02 (SPI_SDIO)    | PA7 (SPI1 MOSI)                         | Serial Data Input/Output                                                                                                   |
-| RESET-BUF           | PB1 (or choose availabe digital pins)   | Master reset                                                                            |
-| IOUPDATE-BUF        | PB0 (or choose availabe digital pins)   | This initiates the transfer of written data from the port buffer to active registers. IO_UPDATE is active on a rising edge.  |
+| RESET-BUF           | PB1 (or choose available digital pins)   | Master reset                                                                            |
+| IOUPDATE-BUF        | PB0 (or choose available digital pins)   | This initiates the transfer of written data from the port buffer to active registers. IO_UPDATE is active on a rising edge.  |
 | GND                 | GND                                     | Ground                                                                                                                     |                                            |
 
 ![AD9914_STM32 connections](https://user-images.githubusercontent.com/49960231/228725574-eddefc6c-abb5-49b0-ab80-50401e504499.png)
